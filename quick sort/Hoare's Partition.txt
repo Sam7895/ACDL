@@ -1,0 +1,19 @@
+QuickSort (A, p, r) 
+if (p<r) 
+q = Partition (A, p, r) 
+QuickSort(A, p, q) 
+QuickSort(A, q+1,r) 
+Partition (A, p, r): 
+x = A[p] 
+i = p-1 
+j = r+1 
+while (True) 
+do 
+{ 
+i++} while (A[i] < x): 
+do 
+{ 
+j--} while (A[j] > x) 
+if (i>=j): 
+return j 
+swap (A[i], A[j]) 

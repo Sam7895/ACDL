@@ -1,0 +1,14 @@
+SumOfSubsets (index, weight, total): 
+if promising (index, weight): 
+if(weight == M): 
+print solution 
+else 
+x[index] = 1 
+SumOfSubsets (index + 1, weight + W[index+1], total - W[index + 1]) 
+x[index] = 0 
+SumOfSubsets (index + 1, weight, total - W[index + 1]) 
+boolean promising (index, weight) 
+if (index == N - 1): 
+return ((weight + total >= M) and (weight == M)) 
+else: 
+return ((weight + total >= M) and (weight == M) or (weight + W[index +1 ])) 
